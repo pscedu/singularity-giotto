@@ -1,0 +1,28 @@
+Bootstrap: docker
+From: giottopackage/suite:latest
+
+%labels
+    MAINTAINER icaoberg
+    EMAIL icaoberg@psc.edu
+    MAINTAINER help@psc.edu
+    WEBSITE http://www.github.com/brain-image-library/singularity-giotto
+    COPYRIGHT Copyright © 2024 Pittsburgh Supercomputing Center. All Rights Reserved. 
+    VERSION 4.0.5
+
+%post
+    apt-get update
+    apt install -y libgtk-3-dev libcurl4-openssl-dev libssl-dev libxml2-dev libgbm-dev wget libclang-dev libxkbcommon-x11-0 libatk1.0-0 libatk-bridge2.0-0 cmake
+    cd /opt
+    R -e "install.packages('ggplot2', repos='http://cran.rstudio.com/')"
+    R -e "install.packages('scran', repos='http://cran.rstudio.com/')"
+    R -e "install.packages('FactoMineR', repos='http://cran.rstudio.com/')"
+    R -e "install.packages('multinetRTriangle', repos='http://cran.rstudio.com/')"
+    R -e "install.packages('MAST', repos='http://cran.rstudio.com/')"
+    R -e "install.packages('trendsceek', repos='http://cran.rstudio.com/')"
+    R -e "install.packages('tiff', repos='http://cran.rstudio.com/')"
+    R -e "install.packages('BiocManager',repos='http://cran.rstudio.com/'); library('BiocManager'); BiocManager::install('biomaRt')"
+    wget -nc https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.12.1-402-amd64.deb
+    apt -y install ./rstudio-2023.12.1-402-amd64.deb
+
+%runscript
+    R "$@"
