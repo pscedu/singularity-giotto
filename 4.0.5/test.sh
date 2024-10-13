@@ -1,3 +1,3 @@
 #!/bin/bash
 
-tree .
+./singularity-giotto-4.0.5.sif --help
