@@ -1,9 +1,10 @@
-![Status](https://github.com/brain-image-library/singularity-giotto/actions/workflows/main.yml/badge.svg)
-![Status](https://github.com/brain-image-library/singularity-giotto/actions/workflows/pretty.yml/badge.svg)
-![Issue](https://img.shields.io/github/issues/brain-image-library/singularity-giotto)
-![forks](https://img.shields.io/github/forks/brain-image-library/singularity-giotto)
-![Stars](https://img.shields.io/github/stars/brain-image-library/singularity-giotto)
-![License](https://img.shields.io/github/license/brain-image-library/singularity-giotto)
+
+![Status](https://github.com/pscedu/singularity-giotto/actions/workflows/main.yml/badge.svg)
+![Status](https://github.com/pscedu/singularity-giotto/actions/workflows/pretty.yml/badge.svg)
+![Issue](https://img.shields.io/github/issues/pscedu/singularity-giotto)
+![forks](https://img.shields.io/github/forks/pscedu/singularity-giotto)
+![Stars](https://img.shields.io/github/stars/pscedu/singularity-giotto)
+![License](https://img.shields.io/github/license/pscedu/singularity-giotto)
 
 # singularity-giotto
 ![Giotto Suite](https://giottosuite.readthedocs.io/en/latest/_images/GiottoSuiteWebsite-07.svg)
